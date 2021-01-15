@@ -51,10 +51,10 @@ arvore adicionar (int valor, arvore raiz, int *cresceu) {
 					break;
 			    case -1:
 					raiz->fb = 0;
-					cresceu = 0;
+					*cresceu = 0;
 					break;
 				case 1:
-					cresceu = 0;
+					*cresceu = 0;
                     //o fator de balanço passaria ao valor 2,
 					return rotacionar(raiz);
 			}
